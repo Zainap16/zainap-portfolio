@@ -61,7 +61,8 @@ img{
 
 #big-title{
     color: var(--darkPink);
-    font-family: 'Trueheart', sans-serif;                        font-family: 'Trueheart Condensed', sans-serif;
+    font-family: 'Trueheart', sans-serif;                       
+    font-family: 'Trueheart Condensed', sans-serif;
     font-weight: normal;
     font-size: 3em;
     text-align: center;
