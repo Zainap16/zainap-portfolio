@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Protest+Guerrilla&display=swap');
 
 /* CSS RESET */
-
+html,body{
+  height: 100%;
+}
 body,
 main,
 ul,
@@ -12,7 +14,8 @@ p,
 button,
 img,
 header,
-div {
+div,
+h1 {
   margin: 0;
   padding: 0;
   border: 0;
@@ -30,10 +33,12 @@ div {
     font-weight: bold;
   }
 
+
+
   /* NAV BAR */
 nav ul li > a , button > a{
     text-decoration: none;
-   color: black;
+  
   }
   
   button>a{
@@ -45,17 +50,17 @@ nav ul li > a , button > a{
   }
   
   nav {
-   width: 16vw;
-    padding: 15% 1% 15% 1%;
     background-color: var(--darkPink);
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1.8em;
+    height: 100%;
+    
   }
 
   /* IMAGE */
 img{
-    height: 15vw;
-    width: 16vw;
+    height: 18vw;
+    width: 28.6vw;
 }
 
 
@@ -64,7 +69,73 @@ img{
     font-family: 'Trueheart', sans-serif;                       
     font-family: 'Trueheart Condensed', sans-serif;
     font-weight: normal;
-    font-size: 3em;
-    text-align: center;
+    font-size: 4em;
+   /* border: 5px double #b76e79; */
+   margin: 4% 5% 5% 5%;
     
+}
+
+
+.container-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  width: 100vw; /* Full viewport width */
+  height: 100vh; /* Full viewport height */
+  box-sizing: border-box;
+ 
+}
+
+.item-1 {
+  grid-area: 1 / 1 / 2/ 3;
+  background-color: var(--darkPink);
+  /* border: 12px solid black; */
+  
+}
+
+.item-2 {
+  grid-area: 2 / 1 / 6 / 3;
+  background-color: gray;
+  /* border: 12px solid black; */
+}
+.item-3 {
+  grid-area: 1 / 3 / 2 / 8;
+  /* background-color: peru; */
+  /* border: 12px solid black; */
+  padding-top: 5%;
+  text-align: center;
+}
+
+.item-4 {
+  grid-area: 2 / 3 / 6 / 8;
+  /* background-color: khaki; */
+  /* border: 12px solid black; */
+  text-align: center;
+}
+
+nav ul li > a {
+  
+  color: var(--lightPink);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hover effect: glow */
+nav ul li > a:hover {
+  
+  color: #f1a3ad;
+  text-shadow: 0 0 3px #ffe3e9, 0 0 6px #ffe3e9, 0 0 9px #ffe3e9;
+}
+
+.item-4{
+  padding: 5% 5% 5% 5%;
+  font-size: 1.5em;
+}
+
+.border-cust{
+  color: var(--darkPink);
+  /* font-size: 1em; */
+}
+
+span {
+  color: var(--middleDarkPink);
 }
