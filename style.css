@@ -1,0 +1,126 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Protest+Guerrilla&display=swap');
+
+/* CSS RESET */
+
+body,
+main,
+ul,
+li,
+nav,
+section,
+p,
+button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+:root {
+  --darkPink: #b76e79;
+  --middleDarkPink: #f1a3ad;
+  --lightPink: #ffe3e9;
+}
+
+body {
+  background-color: var(--lightPink);
+  font-family: "Indie Flower";
+  font-weight: bold;
+}
+
+body, button {
+    background-color: var(--lightPink);
+    font-family: "Indie Flower";
+    font-weight: bold;
+  }
+
+/* NAV BAR */
+nav ul li > a , button > a{
+  text-decoration: none;
+ color: black;
+}
+
+button>a{
+    color: var(--lightPink);
+}
+
+nav ul li {
+  list-style-type: none;
+}
+
+nav {
+  max-width: 11vw;
+  padding: 1% 1% 1% 1%;
+  border-radius: 20px;
+  background-color: var(--darkPink);
+}
+
+nav {
+  position: absolute;
+  top: 20vw;
+  left: 89vw;
+  z-index: 10;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+}
+
+#hero {
+  order: 2;
+}
+
+#hero > img{
+    height: 47vw;
+    width: 38vw;
+}
+
+#mini-title{
+    font-size: 1.6rem;
+}
+
+#big-title {
+  font-size: 3rem;
+}
+
+#position {
+  background-color: var(--darkPink);
+  color: var(--lightPink);
+  width: 20vw;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#highlight{
+    color: var(--darkPink);
+    font-family: 'Trueheart', sans-serif;                        font-family: 'Trueheart Condensed', sans-serif;
+    font-weight: normal;
+}
+
+#introduction{
+   text-align: center;
+   padding: 5% 5% 5% 5%;
+}
+
+button{
+    background-color: var(--darkPink);
+    color: var(--lightPink);
+    padding: 4% 4% 4% 4%;
+    border-radius: 20px;
+    font-size: 1em;
+}
+
+.icon {
+    font-size: 3vw;
+    color: var(--lightPink);
+    transition: all 0.3s ease-in-out;
+  }
+
+  /* Hover effect: glow */
+  .icon:hover {
+    color: #f1a3ad;
+    text-shadow: 0 0 8px #ffe3e9, 0 0 16px #ffe3e9, 0 0 24px #ffe3e9;
+  }

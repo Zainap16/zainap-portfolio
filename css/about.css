@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Protest+Guerrilla&display=swap');
+
+/* CSS RESET */
+
+body,
+main,
+ul,
+li,
+nav,
+section,
+p,
+button,
+img,
+header,
+div {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+:root {
+    --darkPink: #b76e79;
+    --middleDarkPink: #f1a3ad;
+    --lightPink: #ffe3e9;
+  }
+  
+  body {
+    background-color: var(--lightPink);
+    font-family: "Indie Flower";
+    font-weight: bold;
+  }
+
+  /* NAV BAR */
+nav ul li > a , button > a{
+    text-decoration: none;
+   color: black;
+  }
+  
+  button>a{
+      color: var(--lightPink);
+  }
+  
+  nav ul li {
+    list-style-type: none;
+  }
+  
+  nav {
+   width: 16vw;
+    padding: 15% 1% 15% 1%;
+    background-color: var(--darkPink);
+    text-align: center;
+    font-size: 1.5em;
+  }
+
+  /* IMAGE */
+img{
+    height: 15vw;
+    width: 16vw;
+}
+
+
+#big-title{
+    color: var(--darkPink);
+    font-family: 'Trueheart', sans-serif;                        font-family: 'Trueheart Condensed', sans-serif;
+    font-weight: normal;
+    font-size: 3em;
+    text-align: center;
+    
+}
